@@ -7,7 +7,7 @@ Package.describe({
 
 
 Package.onUse(function(api) {
-    api.versionsFrom('1.0');
+    api.versionsFrom('1.1.0.2');
 
     api.use('templating', 'client');
     
@@ -18,3 +18,8 @@ Package.onUse(function(api) {
     api.export(['lldistance', 'lldistance']);
 });
 
+Package.onTest(function(api) {
+  api.use('tinytest');
+  api.use('sorenriise:lldistance');
+  api.addFiles('lldistance-tests.js');
+});
