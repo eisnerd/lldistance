@@ -1,6 +1,6 @@
 Package.describe({
     name: 'sorenriise:lldistance',
-    version: '1.0.1',
+    version: '1.0.2',
     summary: "Meteor template for Great Circle distance between longitude-latitude points",
     git: 'https://github.com/sorenriise/lldistance'
 });

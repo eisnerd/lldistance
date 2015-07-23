@@ -36,15 +36,15 @@ if (Meteor.isClient) {
 	    // make a user friendly number
 	    if (lldistance.metric) {
 		var km = meters/1000;
-		if (km > 10) return Math.round(km) + " km";
-		if (meters > 999) return Math.round(km*10)/10 + " km";
-		return Math.round(meters/10)*10 + " m";
+		if (km > 10) return Math.round(km) + lldistance.km[0];
+		if (meters > 999) return Math.round(km*10)/10 + lldistance.km[0];
+		return Math.round(meters/10)*10 + lldistance.km[1];
 	    } else {
 		var miles = meters / 1609.34;
 		var feet = meters / 0.3048;
-		if (miles > 10) return Math.round(miles) + " miles";
-		if (feet > 999) return Math.round(miles*10)/10 + " miles";
-		return Math.round(feet/10)*10 + " feet";
+		if (miles > 10) return Math.round(miles) + lldistance.miles[0];
+		if (feet > 999) return Math.round(miles*10)/10 + lldistance.miles[0];
+		return Math.round(feet/10)*10 + lldistance.miles[1];
 	    }
  	}
     });

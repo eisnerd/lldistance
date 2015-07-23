@@ -38,3 +38,11 @@ You can style the text by modifying the css class `.lldistance`
 
 	lldistance.metric = true;  // to get km and meters
 	lldistance.metric = false; // to get miles and feet (default)
+
+	lldistance.miles = [" miles"," feet"]; // labes used for imperial
+	lldistance.miles = [" km"," m"];       // labes used for metric
+
+
+### Known issues
+
+   - You cannot configure the size of the planet
