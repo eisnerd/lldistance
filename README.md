@@ -27,12 +27,12 @@ And you will get output like;
 
 or if you prefer metric
 
-   220 m
-   2.7 km
-   15 km
+    220 m
+    2.7 km
+    15 km
 
 
-You can style the text by modifying the css class '.lldistance'
+You can style the text by modifying the css class `.lldistance`
 
 ### Configuration
 
