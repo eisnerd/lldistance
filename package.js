@@ -1,5 +1,5 @@
 Package.describe({
-    name: 'lldistance',
+    name: 'sorenriise:lldistance',
     version: '1.0.0',
     summary: "Meteor template for Great Circle distance between longitude-latitude points",
     git: 'https://github.com/sorenriise/lldistance'
@@ -8,10 +8,13 @@ Package.describe({
 
 Package.onUse(function(api) {
     api.versionsFrom('1.0');
+
+    api.use('templating', 'client');
     
-    api.addFiles('distance.js'  , 'client');
+    api.addFiles('distance.html', 'client');
     api.addFiles('init.js'      , 'client');
-    api.addFiles('distance.html', 'web');
+    api.addFiles('distance.js'  , 'client');
     
     api.export(['lldistance', 'lldistance']);
-})
+});
+
