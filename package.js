@@ -15,7 +15,7 @@ Package.onUse(function(api) {
     api.addFiles('init.js'      , 'client');
     api.addFiles('distance.js'  , 'client');
     
-    api.export(['lldistance', 'lldistance']);
+    api.export(['lldistance', 'lldistance', 'between', 'formatDistance']);
 });
 
 Package.onTest(function(api) {
